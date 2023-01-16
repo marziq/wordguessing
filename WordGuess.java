@@ -7,9 +7,9 @@ public class WordGuess {
                   "Goodnight","Manipulation","Zimbabwe","Void", "Circle", "Cool", "Adidas", "Chicken","Hotspot", "Oracle", "Event","Midnight",
 		          "Carpool", "Wine", "Winter", "Zealous","Pyramid", "Padini","Eyes", "Wagyu", "Ribeye", "Love", "Alcohol","Inverse","Partial",
 		          "Eclipse", "Sun", "Apple","Refresher", "Search", "Find", "Long","Would","Make","Like","Him","Into","Time","Feast", "Daylight",
-		          "Has","Look","Donggle","More", "Yacht", "Write","Go","See","Number","No","Way","Could","People","Witch","Fest",
+		          "Has","Look","Dongle","More", "Yacht", "Write","Go","See","Number","No","Way","Could","People","Witch","Fest",
 		          "Beast","Split", "Premier","Toilet", "Retain", "Sticker", "Conferences", "Scanner","GitHub", "Query","Collectives",
-		          "Mexican", "Druglord", "Hashmap", "Dandelions", "Map", "Developing", "Bribe", "Overflow", "Techincal","Companies",
+		          "Mexican", "Druglord", "Hashmap", "Dandelions", "Map", "Developing", "Bribe", "Overflow", "Technical","Companies",
 		          "Formula", "Course", "Stuck", "Greetings", "Arabians", "Structure", "Matrix", "Session","Frequency", "Assignment"};		      
 		Greetings();
 		RandomNumbers(index);
