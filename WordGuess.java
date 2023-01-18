@@ -1,15 +1,15 @@
 import java.util.Scanner;
 import java.io.IOException;
-public class WordGuess {
+public class MemoryGame {
 	public static void main(String[] args) {
 		 int[] index = new int[7];
 		 String[] words = {"Ant","Zebra","Pig","Bee","Honey","Car","Motorcycle","Nuclear","Eclipse","Money", "Minecraft", "New","Attached",
-                  "Goodnight","Manipulation","Zimbabwe","Void", "Circle", "Cool", "Adidas", "Chicken","Hotspot", "Oracle", "Event","Midnight",
+                 "Goodnight","Manipulation","Zimbabwe","Void", "Circle", "Cool", "Adidas", "Chicken","Hotspot", "Oracle", "Event","Midnight",
 		          "Carpool", "Wine", "Winter", "Zealous","Pyramid", "Padini","Eyes", "Wagyu", "Ribeye", "Love", "Alcohol","Inverse","Partial",
 		          "Eclipse", "Sun", "Apple","Refresher", "Search", "Find", "Long","Would","Make","Like","Him","Into","Time","Feast", "Daylight",
-		          "Has","Look","Dongle","More", "Yacht", "Write","Go","See","Number","No","Way","Could","People","Witch","Fest",
+		          "Has","Look","Donggle","More", "Yacht", "Write","Go","See","Number","No","Way","Could","People","Witch","Fest",
 		          "Beast","Split", "Premier","Toilet", "Retain", "Sticker", "Conferences", "Scanner","GitHub", "Query","Collectives",
-		          "Mexican", "Druglord", "Hashmap", "Dandelions", "Map", "Developing", "Bribe", "Overflow", "Technical","Companies",
+		          "Mexican", "Druglord", "Hashmap", "Dandelions", "Map", "Developing", "Bribe", "Overflow", "Techincal","Companies",
 		          "Formula", "Course", "Stuck", "Greetings", "Arabians", "Structure", "Matrix", "Session","Frequency", "Assignment"};		      
 		Greetings();
 		RandomNumbers(index);
@@ -29,10 +29,8 @@ public class WordGuess {
 		//change the repeated number 
 		for(int i = 0 ; i < 7; i++)
 			for(int j = 0 ; j < 7-1;j++)
-				if(index[j] == index[j+1]) {
-					index[j] = (int)(Math.random() * 99 );
-					index[j+1] = (int)(Math.random() * 99 );
-				}		
+				if(index[j] == index[j+1]) 
+					index[j] = (int)(Math.random() * 99 );	
 	}
 	static void Words(String[] words, int[] index) {
 		for(int i = 0; i < index.length; i++) {
@@ -76,9 +74,9 @@ public class WordGuess {
 		input.close();
 		return marks;
 	}
-    static void Marks(int marks) {
-    	int percentage;
-    	System.out.println("Total correct words: " + marks + "/7");
+   static void Marks(int marks) {
+   	int percentage;
+   	System.out.println("Total correct words: " + marks + "/7");
 		percentage = (int) ((marks/7.0) * 100);
 		if(percentage == 100)
 			System.out.println("You got it all correct!\nGreat!\nYou've got " + percentage + "%" );
@@ -90,5 +88,5 @@ public class WordGuess {
 			System.out.println("You need to improve your memory!\nYou've got " + percentage + "%");
 		else if (percentage == 0)
 		  System.out.println("You have memory loss problem!");
-   }
+  }
 }
